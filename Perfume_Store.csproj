@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7382E70A-C560-47CE-9A6D-793CC2303978}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Perfume_Store</RootNamespace>
+    <AssemblyName>Perfume_Store</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAccessPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccessPage.Designer.cs">
+      <DependentUpon>AdminAccessPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Brand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Brand.Designer.cs">
+      <DependentUpon>Admin_Add_Brand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Customers.Designer.cs">
+      <DependentUpon>Admin_Add_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Orders.Designer.cs">
+      <DependentUpon>Admin_Add_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Order_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Order_Items.Designer.cs">
+      <DependentUpon>Admin_Add_Order_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Perfumes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Perfumes.Designer.cs">
+      <DependentUpon>Admin_Add_Perfumes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Sales.Designer.cs">
+      <DependentUpon>Admin_Add_Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Sales_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Sales_Items.Designer.cs">
+      <DependentUpon>Admin_Add_Sales_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Table_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Table_View.Designer.cs">
+      <DependentUpon>Admin_Table_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontPage.Designer.cs">
+      <DependentUpon>FrontPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserAccessPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccessPage.Designer.cs">
+      <DependentUpon>UserAccessPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Order.Designer.cs">
+      <DependentUpon>User_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Table_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Table_View.Designer.cs">
+      <DependentUpon>User_Table_View.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAccessPage.resx">
+      <DependentUpon>AdminAccessPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Brand.resx">
+      <DependentUpon>Admin_Add_Brand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Customers.resx">
+      <DependentUpon>Admin_Add_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Orders.resx">
+      <DependentUpon>Admin_Add_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Order_Items.resx">
+      <DependentUpon>Admin_Add_Order_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Perfumes.resx">
+      <DependentUpon>Admin_Add_Perfumes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Sales.resx">
+      <DependentUpon>Admin_Add_Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Sales_Items.resx">
+      <DependentUpon>Admin_Add_Sales_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Table_View.resx">
+      <DependentUpon>Admin_Table_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontPage.resx">
+      <DependentUpon>FrontPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserAccessPage.resx">
+      <DependentUpon>UserAccessPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Order.resx">
+      <DependentUpon>User_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Table_View.resx">
+      <DependentUpon>User_Table_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
